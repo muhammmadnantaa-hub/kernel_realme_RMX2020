@@ -1369,7 +1369,7 @@ static struct ctl_table kern_table[] = {
 		.mode		= 0644,
 		.proc_handler	= perf_cpu_time_max_percent_handler,
 		.extra1		= &zero,
-		.extra2		= &one_hundred,
+		.extra2		= &two_hundred,
 	},
 	{
 		.procname	= "perf_event_max_stack",
@@ -1568,7 +1568,7 @@ static struct ctl_table vm_table[] = {
 		.mode		= 0644,
 		.proc_handler	= dirty_background_ratio_handler,
 		.extra1		= &zero,
-		.extra2		= &one_hundred,
+		.extra2		= &two_hundred,
 	},
 	{
 		.procname	= "dirty_background_bytes",
@@ -1585,7 +1585,7 @@ static struct ctl_table vm_table[] = {
 		.mode		= 0644,
 		.proc_handler	= dirty_ratio_handler,
 		.extra1		= &zero,
-		.extra2		= &one_hundred,
+		.extra2		= &two_hundred,
 	},
 	{
 		.procname	= "dirty_bytes",
@@ -1827,7 +1827,7 @@ static struct ctl_table vm_table[] = {
 		.mode		= 0644,
 		.proc_handler	= sysctl_min_unmapped_ratio_sysctl_handler,
 		.extra1		= &zero,
-		.extra2		= &one_hundred,
+		.extra2		= &two_hundred,
 	},
 	{
 		.procname	= "min_slab_ratio",
@@ -1836,7 +1836,7 @@ static struct ctl_table vm_table[] = {
 		.mode		= 0644,
 		.proc_handler	= sysctl_min_slab_ratio_sysctl_handler,
 		.extra1		= &zero,
-		.extra2		= &one_hundred,
+		.extra2		= &two_hundred,
 	},
 #endif
 #ifdef CONFIG_SMP
