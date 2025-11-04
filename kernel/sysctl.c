@@ -1631,11 +1631,11 @@ static struct ctl_table vm_table[] = {
 		.proc_handler	= proc_dointvec_minmax,
 		.extra1		= &zero,
 #ifndef CONFIG_MTK_GMO_RAM_OPTIMIZE
-		.extra2		= &one_hundred,
+		.extra2		= &two_hundred,
 #else
 		.extra2		= &two_hundred,
 #endif
-		.extra2		= &one_hundred,
+		.extra2		= &two_hundred,
 	},
 #ifdef CONFIG_HUGETLB_PAGE
 	{
